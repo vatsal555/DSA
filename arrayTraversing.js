@@ -1,9 +1,21 @@
-let arr = [9, 23, 45, 10, 27, 35, 67, 89, 99, 14, 69];
+let arr = [12, 25, 46, 36, 89, 78, 45, 96, 62, 34, 31, 52, 19, 80];
 
 // for (let i = 0; i < arr.length; i++) {
-//   document.write(`Array ${i} is ${arr[i]} <br>`);
+//   console.log(`Array ${i} is ${arr[i]} `);
 // }
 
-let x = 3;
+// let x = 10;
+// console.log(arr[x]);
 
-document.write(arr[3]);
+const getElement = () => {
+  let element = document.getElementById("element").value;
+  if (
+    element < arr.length &&
+    typeof Number(element) === "number" &&
+    element > -1
+  ) {
+    alert(arr[element]);
+  } else {
+    alert("Please Enter Valid Input");
+  }
+};
