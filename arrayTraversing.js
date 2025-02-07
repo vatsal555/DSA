@@ -12,7 +12,8 @@ const getElement = () => {
   if (
     element < arr.length &&
     typeof Number(element) === "number" &&
-    element > -1
+    element > -1 &&
+    element !== ""
   ) {
     alert(arr[element]);
   } else {
