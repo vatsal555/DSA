@@ -6,7 +6,7 @@ for (let i = position; i < arr.length - 1; i++) {
   arr[i] = arr[i + 1];
   //   console.log(arr[i]);
 }
-arr.length = arr.length - 1;
+arr.length = arr.length - 1; 
 
 console.log(arr);
 
